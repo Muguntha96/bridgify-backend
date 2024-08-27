@@ -47,9 +47,8 @@ grade_level:{type:String,
     default:"General Member",
     required:true
   },
-  profile_image:{
-    type:String
-  }
+
+  profile: { type: Schema.Types.ObjectId, ref: 'Profile' },
 
 },
 {

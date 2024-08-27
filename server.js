@@ -6,7 +6,6 @@ import cors from 'cors'
 import './config/database.js'
 
 // import routers
-import { router as indexRouter } from './routes/index.js'
 import { router as newMembersRouter } from './routes/newMembers.js'
 
 // create the express app
@@ -18,7 +17,6 @@ app.use(logger('dev'))
 app.use(express.json())
 
 // mount imported routes
-app.use('/', indexRouter)
 app.use('/api/newMembers',newMembersRouter)
 
 // handle 404 errors
