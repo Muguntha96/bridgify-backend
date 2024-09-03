@@ -9,7 +9,8 @@ phone_number:{type:String,required:true,unique:true},
 student_id:{type:String,required:true,unique:true},
 grade_level:{type:String,
   enum:['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'],
-  required:true},
+  required:true,
+  default:'I'},
   cultural_background:{
     type:String,
     enum: [

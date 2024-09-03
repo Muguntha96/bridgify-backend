@@ -8,6 +8,7 @@ router.get('/',newMembersCtrl.index)
 
 
 
+
 export{
   router
 }

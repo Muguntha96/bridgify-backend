@@ -7,6 +7,7 @@ import './config/database.js'
 
 // import routers
 import { router as newMembersRouter } from './routes/newMembers.js'
+import { router as eventsRouter} from './routes/events.js'
 
 // create the express app
 const app = express()
@@ -17,7 +18,8 @@ app.use(logger('dev'))
 app.use(express.json())
 
 // mount imported routes
-app.use('/api/newMembers',newMembersRouter)
+app.use('/api/members', newMembersRouter)
+app.use('/api/events',eventsRouter)
 
 // handle 404 errors
 app.use(function (req, res, next) {
